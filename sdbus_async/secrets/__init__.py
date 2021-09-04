@@ -26,6 +26,13 @@ from .interfaces import (
     SecretServiceInterface,
     SecretSessionInterface,
 )
+from .objects import (
+    SecretCollection,
+    SecretItemCollection,
+    SecretPromt,
+    SecretService,
+    SecretSession,
+)
 
 __all__ = (
     'SecretCollectionInterface',
@@ -33,4 +40,10 @@ __all__ = (
     'SecretPromptInterface',
     'SecretServiceInterface',
     'SecretSessionInterface',
+
+    'SecretService',
+    'SecretCollection',
+    'SecretItemCollection',
+    'SecretPromt',
+    'SecretSession',
 )

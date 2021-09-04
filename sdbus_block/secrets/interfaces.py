@@ -22,11 +22,7 @@ from __future__ import annotations
 
 from typing import Any, Dict, List, Tuple
 
-from sdbus import (
-    DbusInterfaceCommon,
-    dbus_method,
-    dbus_property,
-)
+from sdbus import DbusInterfaceCommon, dbus_method, dbus_property
 
 
 class SecretServiceInterface(
