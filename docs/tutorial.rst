@@ -1,6 +1,8 @@
 Freedesktop Secrets Tutorial
 ============================
 
+.. py:currentmodule:: sdbus_async.secrets
+
 This tutorial will guide you through the basic steps
 on how to use Freedesktop Secrets API using the python-sdbus
 binds.
