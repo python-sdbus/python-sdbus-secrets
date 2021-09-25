@@ -245,6 +245,9 @@ class SecretCollectionInterface(
             ``org.freedesktop.Secret.Item.``. For example, ``label`` property
             will have a ``org.freedesktop.Secret.Item.Label`` key.
         :param Tuple[str,bytes,bytes,str] secret: Secret data.
+            Secret data contains tuple of session path,
+            encryption parameters bytes (empty in case of plain mode),
+            secret value bytes and content type string.
         :param bool replace: Replace existing item with same attributes.
         :returns: Object path of new item or ``/`` if prompt needed and
             object path of prompt or ``/`` if prompt is not needed.
@@ -317,7 +320,10 @@ class SecretItemInterface(
     ) -> Tuple[str, bytes, bytes, str]:
         """Get secret of this item.
 
-        :returns: Secret data
+        :returns: Secret data.
+            Secret data contains tuple of session path,
+            encryption parameters bytes (empty in case of plain mode),
+            secret value bytes and content type string.
         :rtype: Tuple[str,bytes,bytes,str]
         """
         raise NotImplementedError
@@ -332,6 +338,9 @@ class SecretItemInterface(
         """Set the secret for this item.
 
         :param Tuple[str,bytes,bytes,str] secret: Secret data.
+            Secret data contains tuple of session path,
+            encryption parameters bytes (empty in case of plain mode),
+            secret value bytes and content type string.
         """
         raise NotImplementedError
 
