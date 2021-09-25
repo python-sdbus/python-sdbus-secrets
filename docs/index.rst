@@ -10,4 +10,5 @@ This package contains python-sdbus binds for
     :maxdepth: 3
     :caption: Contents:
 
+    objects
     interfaces
