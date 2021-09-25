@@ -75,8 +75,8 @@ class SecretCollection(SecretCollectionInterface):
             bus)
 
 
-class SecretItemCollection(SecretItemInterface):
-    """Secrets collection.
+class SecretItem(SecretItemInterface):
+    """Secrets item.
 
     Implements :py:class:`SecretItemInterface`
 
@@ -96,8 +96,8 @@ class SecretItemCollection(SecretItemInterface):
             bus)
 
 
-class SecretPromt(SecretPromptInterface):
-    """Secrets collection.
+class SecretPrompt(SecretPromptInterface):
+    """Secrets prompt.
 
     Implements :py:class:`SecretPromptInterface`
 
@@ -118,7 +118,7 @@ class SecretPromt(SecretPromptInterface):
 
 
 class SecretSession(SecretSessionInterface):
-    """Secrets collection.
+    """Secrets session.
 
     Implements :py:class:`SecretSessionInterface`
 

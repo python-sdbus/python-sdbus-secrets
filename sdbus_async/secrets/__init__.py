@@ -28,8 +28,8 @@ from .interfaces import (
 )
 from .objects import (
     SecretCollection,
-    SecretItemCollection,
-    SecretPromt,
+    SecretItem,
+    SecretPrompt,
     SecretService,
     SecretSession,
 )
@@ -43,7 +43,7 @@ __all__ = (
 
     'SecretService',
     'SecretCollection',
-    'SecretItemCollection',
-    'SecretPromt',
+    'SecretItem',
+    'SecretPrompt',
     'SecretSession',
 )
